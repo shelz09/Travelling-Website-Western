@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Western</title>
+    <link rel="stylesheet" href="western.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="">
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <i class="fa-solid nav-logo-icon fa-city"></i>
+                <h1 class="nav-logo-text">WesTern</h1>
+                <p><em>.in</em></p>
+            </div>
+            <div class="nav-items">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a class="nav-li-links" href="#">Home</a></li>
+                    <li class="nav-li"><a class="nav-li-links" href="#">Tour Lists</a></li>
+                    <li class="nav-li"><a class="nav-li-links" href="#">Destinations</a></li>
+                    <li class="nav-li"><a class="nav-li-links" href="#">Prices</a></li>
+                </ul>
+            </div>
+            <div class="nav-auth">
+                <button class="nav-auth-login">Log-in</button>
+                <button class="nav-auth-night border" id="theme-switch"><i class="fa-solid fa-moon"></i></button>
+                <button class="nav-auth-search border"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="nav-auth-bars border"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <img src="https://picsum.photos/id/296/1349/550" class="slide" alt="1">
+        <img src="https://picsum.photos/id/297/1349/550" class="slide" alt="1">
+        <img src="https://picsum.photos/id/290/1349/550" class="slide" alt="1">
+        <img src="https://picsum.photos/id/203/1349/550" class="slide" alt="1">
+        <div class="main-button-div">
+            <button class="main-button" onclick=GoPrev()><i class="fa-solid fa-chevron-left"></i></button>
+            <h1 class="main-text">Welcome <br> to <span>WesTern</span></h1>
+            <button class="main-button" onclick=GoNext()><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </main>
+    <section>
+        <div class="content">
+            <div class="content-1">
+                <div class="content-1-icon"><i class="fa-solid icon-animation fa-plane-departure"></i></div>
+                <div class="content-1-text">
+                    <h2>500+ Destinations</h2>
+                    <p>destinations like heaven</p>
+                </div>
+            </div>
+            <div class="content-1">
+                <div class="content-1-icon"><i class="fa-solid icon-animation fa-money-bill"></i></div>
+                <div class="content-1-text">
+                    <h2>Best Price</h2>
+                    <p>price game on top</p>
+                </div>
+            </div>
+            <div class="content-1">
+                <div class="content-1-icon"><i class="fa-solid icon-animation fa-user"></i></div>
+                <div class="content-1-text">
+                    <h2>Great Customer</h2>
+                    <p>you are amazing</p>
+                </div>
+            </div>
+            <div class="content-1">
+                <div class="content-1-icon"><i class="fa-regular icon-animation fa-calendar-days"></i></div>
+                <div class="content-1-text">
+                    <h2>Super Fast Booking</h2>
+                    <p>as fast as flash</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="places">
+            <div class="slider-container sweep">
+                <div class="slide-cards">
+                    <div class="card-img">
+                        <img src="https://picsum.photos/id/204/300/200" class="card-img-img" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2>America 2 Days - in Lake Tahoe</h2>
+                        <p><i class="fa-regular card-icon fa-clock"></i>2 days</p>
+                        <div class="card-rating">
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-regular  card-rating-icon fa-star"></i><span>(1 review)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-cards">
+                    <div class="card-img">
+                        <img src="https://picsum.photos/id/305/300/200" class="card-img-img" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2>America 2 Days - in Lake Tahoe</h2>
+                        <p><i class="fa-regular card-icon fa-clock"></i>2 days</p>
+                        <div class="card-rating">
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-regular  card-rating-icon fa-star"></i><span>(1 review)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-cards">
+                    <div class="card-img">
+                        <img src="https://picsum.photos/id/206/300/200" class="card-img-img" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2>America 2 Days - in Lake Tahoe</h2>
+                        <p><i class="fa-regular card-icon fa-clock"></i>2 days</p>
+                        <div class="card-rating">
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-regular  card-rating-icon fa-star"></i><span>(1 review)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-cards">
+                    <div class="card-img">
+                        <img src="https://picsum.photos/id/307/300/200" class="card-img-img" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2>America 2 Days - in Lake Tahoe</h2>
+                        <p><i class="fa-regular card-icon fa-clock"></i>2 days</p>
+                        <div class="card-rating">
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-regular  card-rating-icon fa-star"></i><span>(1 review)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-container sweep">
+                <div class="slide-cards">
+                    <div class="card-img">
+                        <img src="https://picsum.photos/id/208/300/200" class="card-img-img" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2>America 2 Days - in Lake Tahoe</h2>
+                        <p><i class="fa-regular card-icon fa-clock"></i>2 days</p>
+                        <div class="card-rating">
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-regular  card-rating-icon fa-star"></i><span>(1 review)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-cards">
+                    <div class="card-img">
+                        <img src="https://picsum.photos/id/209/300/200" class="card-img-img" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2>America 2 Days - in Lake Tahoe</h2>
+                        <p><i class="fa-regular card-icon fa-clock"></i>2 days</p>
+                        <div class="card-rating">
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-regular  card-rating-icon fa-star"></i><span>(1 review)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-cards">
+                    <div class="card-img">
+                        <img src="https://picsum.photos/id/210/300/200" class="card-img-img" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2>America 2 Days - in Lake Tahoe</h2>
+                        <p><i class="fa-regular card-icon fa-clock"></i>2 days</p>
+                        <div class="card-rating">
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-regular  card-rating-icon fa-star"></i><span>(1 review)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-cards">
+                    <div class="card-img">
+                        <img src="https://picsum.photos/id/211/300/200" class="card-img-img" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2>America 2 Days - in Lake Tahoe</h2>
+                        <p><i class="fa-regular card-icon fa-clock"></i>2 days</p>
+                        <div class="card-rating">
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-solid card-rating-icon fa-star"></i>
+                            <i class="fa-regular  card-rating-icon fa-star"></i><span>(1 review)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-button">
+                <button class="second-button" onclick=SweepPrev()><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="second-button" onclick=SweepNext()><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="destination-section">
+            <div class="destination-section-heading">
+                <i class="fa-solid destination-section-icon fa-location-dot"></i>
+                <h2>Popular Destinations</h2>
+                <a href=#> / View All Destinations</a>
+            </div>
+            <div class="destination-section-para">
+                <p>Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna.<br> Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="destinations-places">
+            <div class="destination-places-images image-1">
+                <div class="destination-places-desc">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>S. America</h3>
+                    <a href="#">3 tours</a>
+                </div>
+            </div>
+            <div class="destination-places-images image-2">
+                <div class="destination-places-desc">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Europe</h3>
+                    <a href="#">3 tours</a>
+                </div>
+            </div>
+            <div class="destination-places-images image-3">
+                <div class="destination-places-desc">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Asia</h3>
+                    <a href="#">3 tours</a>
+                </div>
+            </div>
+            <div class="destination-places-images image-4">
+                <div class="destination-places-desc">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>America</h3>
+                    <a href="#">3 tours</a>
+                </div>
+            </div>
+            <div class="destination-places-images image-5">
+                <div class="destination-places-desc">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Africa</h3>
+                    <a href="#">3 tours</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="activity-newsletter">
+            <div class="activity">
+                <div class="activity-heading">
+                    <i class="fa-solid fa-bars"></i>
+                    <h2>Browse Tours by Activtiy</h2>
+                </div>
+                <div class="activity-content">
+                    <div class="activity-lists">
+                        <ul class="activity-ul">
+                            <li><a href="#">Outdoor Activities</a></li>
+                            <li><a href="#">Cultural And Thematic Tours</a></li>
+                            <li><a href="#">Family Friendly Tours</a></li>
+                            <li><a href="#">holiday & Seasonal  Tours</a></li>
+                        </ul>
+                    </div>
+                    <div class="activity-lists">
+                        <ul class="activity-ul">
+                            <li><a href="#">City Tours</a></li>
+                            <li><a href="#">Indulgence  & Luxury Tours</a></li>
+                            <li><a href="#">Relaxation Tours</a></li>
+                            <li><a href="#">Wild & Adventure Tours</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="newsletter">
+                <div class="activity-heading">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h2>Newsletter</h2>
+                </div>
+                <div class="newsletter-content">
+                    <div class="sapn">
+                        <span>Subscribe for more updates & promotions</span>
+                    </div>
+                    <div class="input-area">
+                        <input type="text" class="newsletter-input" placeholder="Enter Your Email">
+                        <button class="newsletter-button">Subscribe</button>
+                    </div>
+                    <div class="newsletter-icons">
+                        <i class="fa-regular fa-envelope"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
+                        <i class="fa-brands fa-skype"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="discount-section">
+            <div class="discount-section-textarea"></div>
+            <div class="discount-section-textarea">
+                <h1>Discount <span>10-30% Off</span></h1>
+                <p>Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia<br>odio sem nec elit.</p>
+                <button class="discout-button">Learn More</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="travel-articles">
+            <div class="travel-articles-heading">
+                <i class="fa-regular fa-lightbulb"></i>
+                <h1>Travel Articles</h1>
+            </div>
+            <div class="travel-articles-images">
+                <div class="articles-images img-1">
+                    <div class="articles-images-overlay">
+                        <h4>How to Travel with Paper Map</h4>
+                    </div>
+                </div>
+                <div class="articles-images img-2">
+                    <div class="articles-images-overlay">
+                        <h4>Change Your Place and Get The Fresh Air</h4>
+                    </div>
+                </div>
+                <div class="articles-images img-3">
+                    <div class="articles-images-overlay">
+                        <h4>Even The All powerfull Pointing</h4>
+                    </div>
+                </div>
+                <div class="articles-images img-4">
+                    <div class="articles-images-overlay">
+                        <h4>This Leaveless Tree Will Blow Your Mind</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="booking">
+            <div class="booking-why">
+                <h1>Why Book With Us?</h1>
+            </div>
+            <div class="booking-content">
+                <div class="booking-content-blocks">
+                   <div class="booking-content-block-icon">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                   </div>
+                   <div class="booking-content-block-text">
+                    <h3>40,000+ Customers</h3>
+                    <p>Morbi leo risus, porta ac</p>
+                   </div>
+                </div>
+                <div class="booking-content-blocks">
+                    <div class="booking-content-block-icon">
+                        <i class="fa-solid fa-award"></i>
+                       </div>
+                       <div class="booking-content-block-text">
+                        <h3>Award Winning</h3>
+                        <p>Morbi leo risus, porta ac</p>
+                       </div>
+                </div>
+                <div class="booking-content-blocks">
+                    <div class="booking-content-block-icon">
+                        <i class="fa-solid fa-lock"></i>
+                       </div>
+                       <div class="booking-content-block-text">
+                        <h3>Security</h3>
+                        <p>Morbi leo risus, porta ac</p>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-panel-1">
+            <div class="footer-panel-1-parts">
+                <div class="footer-panel-parts-heading">
+                    <i class="fa-solid nav-logo-icon fa-city"></i>
+                    <h2>WesTern</h2>
+                </div>
+                <div class="footer-panel-parts-content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim doloremque velit corrupti nam, quidem optio tempore facere nulla repudiandae excepturi esse perferendis eligendi rem, laboriosam totam. Ea laborum nulla exercitationem.<p>
+                </div>
+                <div class="footer-panel-parts-images">
+                    <img src="award-1.png" class="footer-image" alt="">
+                    <img src="award-2.png" class="footer-image" alt="">
+                </div>
+            </div>
+            <div class="footer-panel-1-parts">
+                <div class="footer-panel-parts-heading">
+                    <h2>Top Destinations</h2>
+                </div>
+                <div class="footer-panel-parts-content-2">
+                    <div class="footer-panel-content-parts-blocks"><img src="https://picsum.photos/id/141/80/80" alt="" class="content-img"></div>
+                    <div class="footer-panel-content-parts-blocks"><img src="https://picsum.photos/id/142/80/80" alt="" class="content-img"></div>
+                    <div class="footer-panel-content-parts-blocks"><img src="https://picsum.photos/id/143/80/80" alt="" class="content-img"></div>
+                    <div class="footer-panel-content-parts-blocks"><img src="https://picsum.photos/id/144/80/80" alt="" class="content-img"></div>
+                    <div class="footer-panel-content-parts-blocks"><img src="https://picsum.photos/id/145/80/80" alt="" class="content-img"></div>
+                    <div class="footer-panel-content-parts-blocks"><img src="https://picsum.photos/id/146/80/80" alt="" class="content-img"></div>
+                </div>
+            </div>
+            <div class="footer-panel-1-parts">
+                <div class="footer-panel-parts-heading">
+                    <h2>Contact  Info</h2>
+                </div>
+                <div class="footer-panel-parts-content hulu">
+                    <p>Address : 12 Main Street Pt. London</p>
+                    <p>Phone : +44 3656 4567</p>
+                    <p>contact@traveltourtheme.com</p>
+                </div>
+                <div class="newsletter-icons-2">
+                    <i class="fa-regular fa-envelope"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-skype"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-panel-2">
+            <p>Copyright 2024 GoodLayers, All Right Reserved</p>
+        </div>
+    </footer>
+    <script src="wetern.js"></script>
+</body>
+</html>
